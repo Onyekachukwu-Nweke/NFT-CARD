@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;300;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.nft-card {
+    margin-top: 25px;
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+    background-color: hsl(216, 50%, 16%);
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 1px 10px 10px 1px hsl(215, 50%, 9%);
+}
+
+
+h3 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+
+/** Card Image **/
+.image-k img {
+    height: 250px;
+    border-radius: 10px; 
+}
+
+.image-k{
+    background-image: url('./images/image-equilibrium.jpg');
+    background-size:cover;
+    background-position:center;
+    width: 90%;
+    height: 250px;
+    border-radius: 10px;
+    transition: background-image 0.001s;
+}
+
+/*** Card Body ***/
+.card-body{
+    width: 250px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.amt-clock {
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    column-gap: 70px;
+}
+
+
+
+hr{
+    color: hsl(215, 32%, 27%);
+    width: 250px;
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+    display: contents;
+}
+
+.amt {
+    color: hsl(178, 100%, 50%);
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    column-gap: 5px;
+}
+
+.time {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    column-gap: 5px;
+}
+
+/**** CARD FOOTER *********/
+.card-footer{
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.card-footer img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border:  2px solid hsl(0, 0%, 100%);
+}
+
+.card-footer span{
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+/*** Active States Styling ***/
+.image-k:hover{
+    background-image: linear-gradient(hsl(178, 100%, 50%, 0.3), hsl(178, 100%, 50%, 0.3)), url('./images/icon-view.svg') , url('./images/image-equilibrium.jpg');
+    background-size: cover, 50px;
+    background-position:center;
+    background-repeat: no-repeat;
+    transition: background-image 0.01s;
+}
+
+.card-body h3:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.card-footer span:hover{
+    color: hsl(178, 100%, 50%);
+}
